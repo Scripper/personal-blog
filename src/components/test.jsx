@@ -16,12 +16,4 @@ const Test = () => {
   )
 }
 
-// export const query = graphql`
-//     {
-//         allContentfulPost {
-//             totalCount
-//         }
-//     }
-// `
-
 export default Test;

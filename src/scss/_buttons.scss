@@ -1,0 +1,26 @@
+a, button {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button[disabled] {
+  background-color: $gray;
+  cursor: default;
+  &:hover {
+    background-color: $gray;
+  }
+}
+.btn {
+  color: #fff;
+  line-height: 18px;
+  font-size: 14px;
+  font-family: IBMPlexSans, sans-serif;
+  padding: 15px 40px;
+}
+
+.btn__primary {
+  background-color: $sky-blue;
+  &:hover {
+    background-color: darken($sky-blue, 10%);
+  }
+}

@@ -1,0 +1,42 @@
+.control {
+  position: relative;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  > input,
+  > textarea,
+  > select {
+    border: 1px solid transparent;
+    border-bottom-color: $dark-gray;
+    height: 40px;
+    background-color: $sky-gray;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 16px;
+    &:focus {
+      border: 1px solid $blue;
+    }
+  }
+  > textarea {
+    min-height: 140px;
+    padding-top: 10px;
+  }
+  label {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    color: $black-2;
+    font-family: 'IBMPlexSans', sans-serif;
+  }
+  .control__error {
+    font-size: 14px;
+    line-height: 18px;
+    color: $error;
+  }
+}
+.control--error {
+  input {
+    border-color: $error;
+  }
+}

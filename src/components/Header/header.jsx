@@ -1,32 +1,16 @@
-import React from "react";
-import { Link } from "gatsby";
-import "./header.scss";
-import AppBar from '@material-ui/core/AppBar';
-
-
-const linkList = [
-  { name: 'auto', link: '/auto' },
-  { name: 'react', link: '/react' },
-  { name: 'bike', link: '/bike' },
-  { name: 'hobbies', link: '/hobbies' },
-];
-
+import React from "react"
+import "./header.scss"
+import { Button } from "@material-ui/core"
+import { Link } from "gatsby"
 
 const Header = () => {
   return (
-    <AppBar>
-      <header className="header__container">
-        <nav>
-          <ul className="header__nav-list">
-            { linkList.map(item => (
-              <li key={item.name}>
-                <Link to={item.link}>{item.name}</Link>
-              </li>
-            )) }
-          </ul>
-        </nav>
-      </header>
-    </AppBar>
+    <header className="header__container">
+      <Link to="/">Home</Link>
+      <Button variant="contained" color="primary">
+        Get in touch
+      </Button>
+    </header>
   )
 }
 

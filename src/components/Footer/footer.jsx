@@ -1,20 +1,33 @@
-import React from "react"
+import React from "react";
+import "./footer.scss";
+import { graphql, useStaticQuery } from "gatsby"
 
-const socialLinks = [
-  { name: 'vk', link: '/' },
-  { name: 'inst', link: '/' },
-  { name: 'telegram', link: '/' },
-  { name: 'linkedin', link: '/' }
-];
 
 const Footer = () => {
+  const data = useStaticQuery(graphql`
+      {
+          allContentfulSocialImages {
+              edges {
+                  node {
+                      image {
+                          file {
+                              url
+                          }
+                      }
+                      alt
+                  }
+              }
+          }
+      }
+  `)
+
   return (
-    <footer>
+    <footer className="footer__container">
       <nav>
-        <ul>
-          { socialLinks.map(item => (
-            <li key={item.name}>
-              <a href={item.link}>{item.name}</a>
+        <ul className="footer__nav-list">
+          { data.allContentfulSocialImages.edges.map(item => (
+            <li key={item.node.alt}>
+              <a href="/"><img src={item.node.image.file.url} alt={item.node.alt}/></a>
             </li>
           )) }
         </ul>

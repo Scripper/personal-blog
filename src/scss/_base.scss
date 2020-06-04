@@ -24,11 +24,12 @@ h2, .h2 {
 .app-wrapper {
   display: flex;
   height: 100vh;
-  header {
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
   & > div {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    main {
+      flex-grow: 1;
+    }
   }
 }

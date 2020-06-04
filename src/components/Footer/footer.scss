@@ -1,0 +1,15 @@
+@import "../../scss/_vars";
+
+
+.footer__container {
+  border-top: 1px solid $sky-gray;
+}
+.footer__nav-list {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  li {
+    margin-right: 20px;
+    max-width: 40px;
+  }
+}

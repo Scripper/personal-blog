@@ -7,13 +7,17 @@ const Test = () => {
       {
           allContentfulPost {
               totalCount
+              nodes {
+                  title
+                  id
+                  childContentfulPostDescriptionTextNode {
+                      description
+                  }
+              }
           }
       }
   `)
   console.log(data)
-  return (
-    <pre>{JSON.stringify(data, null, 4)}</pre>
-  )
 }
 
 export default Test;

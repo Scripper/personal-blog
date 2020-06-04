@@ -1,13 +1,13 @@
 @import "../../scss/_vars";
 
 .header__container {
-  background-color: $sky-gray;
-  nav {
-    margin: 50px 0;
-  }
-}
-.header__nav-list {
-  li {
-    margin: 30px;
+  background-color: $sky-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 25px;
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,0.46);
+  a {
+
   }
 }

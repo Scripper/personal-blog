@@ -1,16 +1,14 @@
 import React from "react"
-import Header from "./Header/header"
+import Menu from "./Menu/menu"
 import Footer from "./Footer/footer"
-
-
+import Header from "./Header/header"
 
 const Layout = ({ children }) => {
-
   return (
     <div className="app-wrapper">
-      <Header/>
-      {/*<Header siteTitle="personal blog" />*/}
+      <Menu/>
       <div>
+        <Header/>
         <main>{children}</main>
         <Footer/>
       </div>

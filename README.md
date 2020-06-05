@@ -1,2 +1,2 @@
-cd my-default-starter/
-gatsby develop
+yarn
+gatsby develop / gatsby build

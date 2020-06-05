@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Scripper",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal blog created with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "nikita.zabaonok@gmail.com",
   "dependencies": {
     "@material-ui/core": "^4.10.1",
     "bulma": "^0.8.2",

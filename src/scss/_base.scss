@@ -23,7 +23,7 @@ h2, .h2 {
 
 .app-wrapper {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   & > div {
     display: flex;
     flex-direction: column;

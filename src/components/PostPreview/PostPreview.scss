@@ -1,0 +1,20 @@
+.post-preview__img-container {
+  img {
+    height: 270px;
+  }
+}
+
+.post-preview__container {
+  position: relative;
+}
+
+.post-preview__title {
+  text-align: center;
+  font-size: 20px;
+}
+.post-preview__date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+}
